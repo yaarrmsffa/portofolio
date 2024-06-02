@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        header {
+            background: #282c34;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background: #61dafb;
+        }
+        nav a {
+            text-decoration: none;
+            color: #282c34;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #282c34;
+            color: white;
+            margin-top: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+        <p>Selamat datang di portofolio saya</p>
+    </header>
+    <nav>
+        <a href="#about">Tentang Saya</a>
+        <a href="#projects">Proyek Saya</a>
+        <a href="#contact">Hubungi Saya</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <p>Halo, nama saya Bachtiar Zahid Musaffa. Saya seorang shinigami yang berdedikasi dan berpengalaman dalam menjamsut musuh musuh yang kuat. Saya sangat antusias dalam melawan musuh yang menantang saya hingga membuatnya babak belur.</p>
+        </section>
+        <section id="projects">
+            <h2>Proyek Saya</h2>
+            <div class="project">
+                <h3>Proyek 1</h3>
+                <img src="kurosaki2.jpg" alt="Gambar Proyek 1">
+                <p>Fight vs Ulquiorra Cifer.</p>
+                <button onclick="toggleDetails('details1')">Lihat Detail</button>
+                <div id="details1" class="hidden">
+                    <p>Duel melawan Arrncar nomor urut 4 Ulquiora Cifer, awalnya kalah tapi karna di semangatin ayang auto menggila.</p>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Proyek 2</h3>
+                <img src="kurosaki.jpeg" alt="Gambar Proyek 2">
+                <p>Thousand Year Blood War</p>
+                <button onclick="toggleDetails('details2')">Lihat Detail</button>
+                <div id="details2" class="hidden">
+                    <p>Pertempuran melawan abah Quincy Yhwach yang op nya bukan main, punya Almighty coy di recall recall ama abah.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Hubungi Saya</h2>
+            <p>Anda bisa menghubungi saya melalui:</p>
+            <ul>
+                <li>Email: <a href="mailto:gulapait62@gmail.com">gulapait62@gmail.com</a></li>
+                <li>Telepon: <a href="tel:+621234567890">+62 123 456 7890</a></li>
+                <li>Instagram: <a href=https://www.instagram.com/yaarr_msff/ target="_blank">@yaarr_msff</a></li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bachtiar Zahid Musaffa. Semua hak cipta dilindungi.</p>
+    </footer>
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
